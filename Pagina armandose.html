@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <link rel="icon" href="icono.ico">
+    <link rel="stylesheet" href="css/Estilos.css"> 
+    <style>
+        .padre{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 10px;}
+        header{background-color: blue;}
+        article{background-color: white;}
+        .der{background-color: white;}
+        .izq{background-color: white;}
+        footer{background-color: yellow;}
+
+        header, aside, article, footer{
+            flex-grow:1;
+            flex-basis:100%;
+            padding: 10px;}
+
+        @media all and (min-width:600px){
+            aside{flex:1 0;}}
+
+        @media all and (min-width:800px){
+            article{flex:3 0;}
+            .izq{order:1;}
+            article{order: 2;}
+            .der{order: 3;}
+            footer{order: 4;}}
+    </style>
+</head>
+<body>
+    <div class="padre">
+    <header>
+           <h1> Aprobá todas las materias</h1>
+           <p style="font-family:fantasy">No te dejes estar, empezá desde temprano</p>
+    </header>
+
+    <article>
+        <h2>Listado de materias que damos</h2>
+    <b>Primario</b>
+    <ul>
+        <b><li>Ciencias Naturales</li></b>
+    </ul>
+    </article>
+
+    <aside class="izq">
+            <b>Secundario</b>
+    <ul>
+        <b><li>Quimica</li> 
+        <li>Fisica </li>
+        <li>Matematica </li>
+        <li>Practicas de estudio</li></b>
+    </ul>
+    </aside>
+
+    <aside class="der">
+            <b>Ingreso</b>
+    <ul>
+        <b><li>Quimica</li> 
+        <li>Fisica </li>
+        <li>Matematica </li>
+    </ul>
+    </aside>
+
+    <footer>
+        <h2>Contactanos</H2>
+            <img src="instagram.jpg" width="20" height="20" alt="Instagram">
+            <a href="https://www.instagram.com/profexito110/" target="_blank"> Visita nuestro Instagram </a>
+                  
+            <h2>Sobre nosotras</h2>
+            <img src="icono.png" width="50" height="50" alt="Libros">
+            <a href="nosotras.html" target="_blank"> Nuestra historia </a>
+        
+            <h2> Dejanos tus consultas</h2>
+            <iframe src="consultas.html"> </iframe>    
+    </footer>
+    </div>
+</body>
+</html>

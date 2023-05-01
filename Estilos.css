@@ -1,0 +1,67 @@
+:root {font-size: 22px;}
+
+p{
+color: red;
+background-color: black;
+width: 100vw;
+font-size: 200%;
+text-align:center;
+}
+
+.cartel{
+color: red;
+background-color: lightgreen;
+width: 100vw;
+font-size: 200%;
+text-align:center;
+}
+
+.titulo{
+    border-style: solid;
+}
+
+.materias{
+font-family:Arial, Helvetica, sans-serif
+}
+.primario{color: blue;
+}
+.secundario{ color:brown
+}
+.ingreso{color: yellow;
+}
+  
+h1{
+padding: 5%;
+width: 100vw;
+font-size: 10vw;
+}
+
+div{
+border-color: red;
+border-width: 2px;
+}
+
+/*.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+display: grid;
+            gap:10px;
+            grid-template-columns: 1fr 2fr;
+            grid-row: 2fr 4fr 2fr 2fr;
+            grid-template-areas: 
+            'header header'
+            'izq main'
+            'publi main'
+            'footer footer';
+            height: 100vh;
+}*/
+/*link rojo no se visitó
+hover paso el raton
+visited si ya lo vi 
+active que activé */
+
+a:link {color: red;}
+a:hover {background-color: yellow;}
+a:visited {color: blue;}
+a:active {background-color: green; color: white;}
